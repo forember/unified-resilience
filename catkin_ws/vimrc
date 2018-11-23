@@ -15,3 +15,6 @@ nmap <leader>m :!/home/vagrant/catkin_ws/make.sh<cr>
 
 " Highlight searches
 set hlsearch
+
+" Colorscheme
+colorscheme desert

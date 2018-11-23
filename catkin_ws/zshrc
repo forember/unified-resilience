@@ -30,3 +30,6 @@ fi
 
 # Turtlebot 3 Model
 export TURTLEBOT3_MODEL=waffle_pi
+
+# Color ls
+alias ls='ls --color=auto'
