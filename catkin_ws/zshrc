@@ -1,0 +1,32 @@
+# Vi keybindings
+bindkey -v
+
+# Antigen
+source "$HOME/antigen.zsh"
+antigen use oh-my-zsh
+
+# Oh-My-Zsh plugins
+antigen bundle dirhistory
+antigen bundle history
+antigen bundle last-working-dir
+antigen bundle screen
+antigen bundle vi-mode
+
+# Zsh-Users plugins
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Powerline
+source /usr/share/powerline/bindings/zsh/powerline.zsh
+
+# ROS
+source /opt/ros/melodic/setup.zsh
+
+# Catkin Workspace
+local catkin_setup="$HOME/catkin_ws/devel/setup.zsh"
+if [ -f "$catkin_setup" ]; then
+    source "$catkin_setup"
+fi
+
+# Turtlebot 3 Model
+export TURTLEBOT3_MODEL=waffle_pi
