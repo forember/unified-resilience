@@ -1,6 +1,8 @@
 # Shell flags
 set -x
 set -e
+# Prevent apt-get from asking us questions
+export DEBIAN_FRONTEND=noninteractive
 # Install sudo
 apt-get install -y sudo
 # Install ROS
@@ -16,7 +18,7 @@ rosdep init
 cd /home/vagrant
 sudo -H -u vagrant rosdep update
 apt-get install -y python-rosinstall python-rosinstall-generator
-apt-get install -y python-wstool build-essesntial
+apt-get install -y python-wstool build-essential
 # Install system utilities
 apt-get install -y psmisc
 # Install stuff for zsh
@@ -33,7 +35,7 @@ touch .vimrc
 cp .vimrc .vimrc.source
 echo 'source ~/catkin_ws/vimrc' >>.vimrc.source
 cat /tmp/vimrc >>.vimrc
-rm /rmp/vimrc
+rm /tmp/vimrc
 # Prepare for Pathogen
 mkdir -p .vim/autoload .vim/bundle
 # Chown home
@@ -64,12 +66,16 @@ apt-get install -y python-catkin-tools
 # Install less
 apt-get install -y less
 # Install turtlebot3 prereqs
-apt-get install -y ros-melodic-{joy,teleop-twist-joy,teleop-twist-keyboard}
-apt-get install -y ros-melodic-{laser-proc,rgbd-launch,depthimage-to-laserscan}
+# Currently unavailable on melodic: teleop-twist-joy, depthimage-to-laserscan, gmapping
+#apt-get install -y ros-melodic-{joy,teleop-twist-joy,teleop-twist-keyboard}
+apt-get install -y ros-melodic-{joy,teleop-twist-keyboard} # teleop-twist-joy not required
+#apt-get install -y ros-melodic-{laser-proc,rgbd-launch,depthimage-to-laserscan}
+apt-get install -y ros-melodic-{laser-proc,rgbd-launch} # depthimage-to-laserscan can be built with patch
 apt-get install -y ros-melodic-rosserial-{arduino,python,server,client,msgs}
 apt-get install -y ros-melodic-{amcl,map-server,move-base,urdf,xacro}
 apt-get install -y ros-melodic-{compressed-image-transport,rqt-image-view}
-apt-get install -y ros-melodic-{gmapping,navigation,interactive-markers}
+#apt-get install -y ros-melodic-{gmapping,navigation,interactive-markers}
+apt-get install -y ros-melodic-{navigation,interactive-markers} # gmapping not required
 # Login with zsh
 chsh -s /bin/zsh vagrant
 # Index the filesystem

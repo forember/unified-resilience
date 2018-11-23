@@ -1,7 +1,8 @@
 set -x
 set -e
+export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get upgrade
+apt-get upgrade -y
 apt-get install -y libxml2 kmod
 mkdir -p /usr/share/desktop-directories
 mkdir -p /usr/share/applications
