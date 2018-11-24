@@ -6,9 +6,13 @@ python3 del powerline_setup
 " Pathogen
 execute pathogen#infect()
 syntax on
+filetype plugin indent on
 
 " Indentation: 2 spaces
 set et ts=2 sts=2 sw=2
+
+" Close YCM documentation on exiting insert mode
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Make catkin workspace
 nmap <leader>m :!/home/vagrant/catkin_ws/make.sh<cr>
@@ -17,4 +21,4 @@ nmap <leader>m :!/home/vagrant/catkin_ws/make.sh<cr>
 set hlsearch
 
 " Colorscheme
-colorscheme desert
+colorscheme pablo

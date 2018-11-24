@@ -63,8 +63,8 @@ chown vagrant:vagrant *
 chown -R vagrant:vagrant .[rv]*
 # Install catkin tools
 apt-get install -y python-catkin-tools
-# Install less
-apt-get install -y less
+# Install extras
+apt-get install -y less silversearcher-ag
 # Install turtlebot3 prereqs
 # Currently unavailable on melodic: teleop-twist-joy, depthimage-to-laserscan, gmapping
 #apt-get install -y ros-melodic-{joy,teleop-twist-joy,teleop-twist-keyboard}
