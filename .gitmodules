@@ -14,3 +14,6 @@
 	path = catkin_ws/src/depthimage_to_laserscan
 	url = https://github.com/ros-perception/depthimage_to_laserscan.git
 	branch = mikaelarguedas-patch-1
+[submodule "xiaofeng-slam"]
+	path = xiaofeng-slam
+	url = maestroctl@tachibanatech.com:xiaofeng-slam.git
