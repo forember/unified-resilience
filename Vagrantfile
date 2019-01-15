@@ -6,7 +6,8 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", path: "ros_provision.sh"
     config.vm.synced_folder "anyconnect-current/", "/root/anyconnect-current"
     config.vm.synced_folder "catkin_ws/", "/home/vagrant/catkin_ws"
-    config.vm.provider "virtualbox" do |v, override|
+    config.vm.synced_folder "xiaofeng-slam/", "/home/vagrant/xiaofeng-slam"
+    config.vm.provider "virtualbox" do |v|
         v.cpus = 4
         v.gui = true
         v.linked_clone = true
@@ -15,6 +16,7 @@ Vagrant.configure("2") do |config|
         v.customize ["modifyvm", :id, "--ostype", "Ubuntu_64", "--vram", "256",
                      "--acpi", "on", "--ioapic", "on", "--hwvirtex", "on",
                      "--clipboard", "bidirectional"]
+        v.default_nic_type = "82543GC"
     end
     config.vm.provision "shell", inline: "poweroff"
 end
