@@ -2,6 +2,7 @@
 bindkey -v
 
 # Antigen
+ANTIGEN_MUTEX=false
 source "$HOME/antigen.zsh"
 antigen use oh-my-zsh
 
@@ -16,8 +17,11 @@ antigen bundle vi-mode
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Powerline
-source /usr/share/powerline/bindings/zsh/powerline.zsh
+# Oh-My-Zsh theme
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+
+# Finalize Antigen
+antigen apply
 
 # ROS
 source /opt/ros/melodic/setup.zsh

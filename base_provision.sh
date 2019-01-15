@@ -13,7 +13,7 @@ apt-get install -y libpangox-1.0-0 libpangoxft-1.0-0
 apt-get install -y xterm virtualbox-guest-x11
 apt-get install -y kde-plasma-desktop
 apt-get install -y libpam-kwallet5 signon-kwallet-extension
-apt-get install -y mosh sakura vinagre
+apt-get install -y mosh sakura vinagre silversearcher-ag
 apt-get install -y chromium-browser
 cat >/etc/sddm.conf.d/autologin.conf << 'FILE'
 [Autologin]
