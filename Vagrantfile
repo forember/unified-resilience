@@ -18,6 +18,5 @@ Vagrant.configure("2") do |config|
                      "--clipboard", "bidirectional"]
         v.default_nic_type = "82543GC"
     end
-    config.vm.provision "shell", inline: "passwd -e vagrant"
     config.vm.provision "shell", inline: "poweroff"
 end
