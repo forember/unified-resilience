@@ -51,7 +51,10 @@ git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
-cd ../../..
+cd ..
+# Install snow
+git clone https://github.com/nightsense/snow.git
+cd ../..
 # Run vim once
 mv .vimrc.source .vimrc
 cd .vim/bundle

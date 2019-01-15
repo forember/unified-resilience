@@ -21,4 +21,6 @@ nmap <leader>m :!/home/vagrant/catkin_ws/make.sh<cr>
 set hlsearch
 
 " Colorscheme
-colorscheme pablo
+set termguicolors
+set background=dark
+colorscheme snow

@@ -33,3 +33,6 @@ export TURTLEBOT3_MODEL=waffle_pi
 
 # Color ls
 alias ls='ls --color=auto'
+
+# Snow color scheme
+[ -n "$PS1" ] && sh ~/.vim/bundle/snow/shell/snow_dark.sh
