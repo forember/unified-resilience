@@ -89,6 +89,8 @@ apt-get install -y ros-melodic-{navigation,interactive-markers} # gmapping not r
 apt-get install -y python-future{,-doc}
 apt-get install -y libgtk-3-0 python-gi python-gi-dev python-gi-cairo python-pil                                                  
 apt-get install -y gir1.2-gtk-3.0 libgtk-3-dev libgtk-3-doc
+apt-get install -y python-pip
+pip install  tomlkit
 # Login with zsh
 chsh -s /bin/zsh vagrant
 # Index the filesystem
