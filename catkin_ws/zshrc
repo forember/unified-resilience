@@ -20,6 +20,20 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Oh-My-Zsh theme
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  status
+  custom
+  context
+  dir
+  screen
+  virtualenv
+  rust
+  git
+  hg
+  cmd_exec_time
+)
+
 # Finalize Antigen
 antigen apply
 
