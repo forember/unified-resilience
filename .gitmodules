@@ -17,3 +17,6 @@
 [submodule "xiaofeng-slam"]
 	path = xiaofeng-slam
 	url = maestroctl@tachibanatech.com:xiaofeng-slam.git
+[submodule "catkin_ws/src/resilient_debug_gui"]
+	path = catkin_ws/src/resilient_debug_gui
+	url = git@github.com:NighttimeDriver50000/resilient_debug_gui.git
