@@ -1,16 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 cd "$(dirname "$0")"
+. /opt/ros/melodic/setup.bash
 if [ "$1" = '-c' ]
 then
-  catkin clean
+  catkin clean --yes
   ./make.sh
-  . devel/setup.sh
+  . devel/setup.bash
   cd ../xiaofeng-slam
-  catkin clean
+  catkin clean --yes
   catkin build
 else
   cd ../xiaofeng-slam
 fi
 pwd
-. devel/setup.sh
+. devel/setup.bash
+rosls slam/launch
 roslaunch slam slam-sim.launch
