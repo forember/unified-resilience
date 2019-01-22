@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 if [ "$1" = '-c' ]
 then
   catkin clean --yes
-  ./make.sh
+  ./make.bash
   . devel/setup.bash
   cd ../xiaofeng-slam
   catkin clean --yes
