@@ -20,3 +20,6 @@
 [submodule "catkin_ws/src/resilient_debug_gui"]
 	path = catkin_ws/src/resilient_debug_gui
 	url = git@github.com:NighttimeDriver50000/resilient_debug_gui.git
+[submodule "catkin_ws/src/ls_slam"]
+	path = catkin_ws/src/ls_slam
+	url = git@github.com:NighttimeDriver50000/ls_slam.git
