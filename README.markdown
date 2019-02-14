@@ -2,6 +2,14 @@
 
 Central point for my work with the RSL at USC Columbia.
 
+## Remember to Update All Submodules
+
+```
+git clone git@github.com:NighttimeDriver50000/unified-resilience.git
+cd unified-resilience
+git submodule --init --recursive
+```
+
 ## Melodic Turtlebot 3 Compat
 
 -   [depthimage_to_laserscan](https://github.com/ros-perception/depthimage_to_laserscan/issues/31)
