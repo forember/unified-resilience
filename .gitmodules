@@ -23,3 +23,6 @@
 [submodule "catkin_ws/src/ls_slam"]
 	path = catkin_ws/src/ls_slam
 	url = git@github.com:NighttimeDriver50000/ls_slam.git
+[submodule "xiaofeng-other"]
+	path = xiaofeng-other
+	url = maestroctl@tachibanatech.com:xiaofeng-other.git
