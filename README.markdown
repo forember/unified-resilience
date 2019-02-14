@@ -7,7 +7,7 @@ Central point for my work with the RSL at USC Columbia.
 ```
 git clone git@github.com:NighttimeDriver50000/unified-resilience.git
 cd unified-resilience
-git submodule --init --recursive
+git submodule update --init --recursive
 ```
 
 ## Melodic Turtlebot 3 Compat
