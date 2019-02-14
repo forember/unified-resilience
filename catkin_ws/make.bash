@@ -2,8 +2,9 @@
 cd "$(dirname "$0")"
 wd="$(pwd)"
 cd ../xiaofeng-slam
-catkin build
+[ "$1" = '-c' ] && catkin clean --yes
+catkin build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug --
 . devel/setup.bash
 cd "$wd"
-catkin clean
+[ "$1" = '-c' ] && catkin clean --yes
 catkin build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug -- "$@"
