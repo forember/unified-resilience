@@ -26,3 +26,6 @@
 [submodule "xiaofeng-other"]
 	path = xiaofeng-other
 	url = maestroctl@tachibanatech.com:xiaofeng-other.git
+[submodule "submit-ip"]
+	path = submit-ip
+	url = maestroctl@tachibanatech.com:submit-ip.git
