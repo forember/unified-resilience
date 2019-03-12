@@ -29,3 +29,6 @@
 [submodule "submit-ip"]
 	path = submit-ip
 	url = maestroctl@tachibanatech.com:submit-ip.git
+[submodule "catkin_ws/src/zed-ros-wrapper"]
+	path = catkin_ws/src/zed-ros-wrapper
+	url = https://github.com/stereolabs/zed-ros-wrapper.git
