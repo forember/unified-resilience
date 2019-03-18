@@ -38,10 +38,16 @@ cat /tmp/vimrc >>.vimrc
 rm /tmp/vimrc
 # Prepare for Pathogen
 mkdir -p .vim/autoload .vim/bundle
+# Prepare for config
+mkdir -p .config/autostart .config/sakura
 # Chown home
 chown vagrant:vagrant .
 chown vagrant:vagrant *
 chown -R vagrant:vagrant .[rv]*
+# Install basic config
+cp /tmp/desktop/cisco-anyconnect.desktop .config/autostart/
+cp /tmp/desktop/sakura.conf .config/sakura/
+tar -C .config -xf /tmp/desktop/krc.tar
 # Install Pathogen
 curl -LSso .vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # Install YouCompleteMe

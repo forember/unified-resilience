@@ -2,6 +2,7 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "bento/ubuntu-18.04"
     config.vm.provision "file", source: "catkin_ws/vimrc", destination: "/tmp/vimrc"
+    config.vm.provision "file", source: "catkin_ws/scripts/desktop", destination: "/tmp/desktop"
     config.vm.provision "shell", path: "base_provision.sh"
     config.vm.provision "shell", path: "ros_provision.sh"
     config.vm.synced_folder "anyconnect-current/", "/root/anyconnect-current"

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[en_US]=Connect to a private network using the Cisco Anyconnect Secure Mobility Client
+Comment=Connect to a private network using the Cisco Anyconnect Secure Mobility Client
+Encoding=UTF-8
+Exec=/opt/cisco/anyconnect/bin/vpnui
+GenericName[en_US]=
+GenericName=
+Icon=/opt/cisco/anyconnect/pixmaps/vpnui48.png
+MimeType=
+Name[en_US]=Cisco Anyconnect Secure Mobility Client
+Name=Cisco Anyconnect Secure Mobility Client
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
