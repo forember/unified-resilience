@@ -10,10 +10,6 @@
 [submodule "catkin_ws/src/mckinnc_ekf"]
 	path = catkin_ws/src/mckinnc_ekf
 	url = git@github.com:NighttimeDriver50000/mckinnc_ekf.git
-[submodule "catkin_ws/src/depthimage_to_laserscan"]
-	path = catkin_ws/src/depthimage_to_laserscan
-	url = https://github.com/ros-perception/depthimage_to_laserscan.git
-	branch = mikaelarguedas-patch-1
 [submodule "xiaofeng-slam"]
 	path = xiaofeng-slam
 	url = maestroctl@tachibanatech.com:xiaofeng-slam.git
