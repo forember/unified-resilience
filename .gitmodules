@@ -12,7 +12,7 @@
 	url = git@github.com:NighttimeDriver50000/mckinnc_ekf.git
 [submodule "xiaofeng-slam"]
 	path = xiaofeng-slam
-	url = maestroctl@tachibanatech.com:xiaofeng-slam.git
+	url = git@github.com:NighttimeDriver50000/xiaofeng-slam.git
 [submodule "catkin_ws/src/resilient_debug_gui"]
 	path = catkin_ws/src/resilient_debug_gui
 	url = git@github.com:NighttimeDriver50000/resilient_debug_gui.git
@@ -21,10 +21,10 @@
 	url = git@github.com:NighttimeDriver50000/ls_slam.git
 [submodule "xiaofeng-other"]
 	path = xiaofeng-other
-	url = maestroctl@tachibanatech.com:xiaofeng-other.git
+	url = git@github.com:NighttimeDriver50000/xiaofeng-other.git
 [submodule "submit-ip"]
 	path = submit-ip
-	url = maestroctl@tachibanatech.com:submit-ip.git
+	url = git@github.com:NighttimeDriver50000/submit-ip.git
 [submodule "catkin_ws/src/zed-ros-wrapper"]
 	path = catkin_ws/src/zed-ros-wrapper
 	url = https://github.com/stereolabs/zed-ros-wrapper.git
