@@ -28,3 +28,6 @@
 [submodule "catkin_ws/src/zed-ros-wrapper"]
 	path = catkin_ws/src/zed-ros-wrapper
 	url = https://github.com/stereolabs/zed-ros-wrapper.git
+[submodule "catkin_ws/src/slam"]
+	path = catkin_ws/src/slam
+	url = git@github.com:NighttimeDriver50000/rsl-slam.git
