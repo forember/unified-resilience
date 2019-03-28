@@ -6,7 +6,7 @@
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 [submodule "catkin_ws/src/turtlebot3_simulations"]
 	path = catkin_ws/src/turtlebot3_simulations
-	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+	url = git@github.com:NighttimeDriver50000/turtlebot3_simulations.git
 [submodule "catkin_ws/src/mckinnc_ekf"]
 	path = catkin_ws/src/mckinnc_ekf
 	url = git@github.com:NighttimeDriver50000/mckinnc_ekf.git

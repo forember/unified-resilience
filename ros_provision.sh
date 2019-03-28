@@ -72,6 +72,10 @@ sudo -H -u vagrant cat >mosh-tx2.sh << 'FILE'
 mosh --ssh='ssh -p 2276' "ubuntu@$(curl https://ttech.click/tx2-ip.txt)"
 FILE
 chmod +x mosh-tx2.sh
+# Disable Chromium kdewallet popups
+sudo -H -u vagrant cat >.chromium-browser.init << 'FILE'
+CHROMIUM_FLAGS='--password-store=basic'
+FILE
 # Chown home
 chown vagrant:vagrant .
 chown vagrant:vagrant *

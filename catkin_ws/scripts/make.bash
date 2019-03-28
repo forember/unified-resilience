@@ -12,5 +12,9 @@ cmake_args="$cmake_args --"
 #. devel/setup.bash
 cd "$wd"
 [ "$1" = '-c' ] && catkin clean --yes
-catkin config --blacklist mckinnc_ekf ls_slam resilient_debug_gui
+blacklist="mckinnc_ekf ls_slam resilient_debug_gui"
+command -v nvcc || blacklist="$blacklist zed_ar_track_alvar_example \
+  zed_depth_sub_tutorial zed_display_rviz zed_nodelet_example zed_ros \
+  zed_rtabmap_example zed_tracking_sub_tutorial zed_video_sub_tutorial zed_wrapper"
+catkin config --blacklist $blacklist
 catkin build $cmake_args "$@"
