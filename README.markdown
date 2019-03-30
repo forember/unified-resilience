@@ -2,6 +2,8 @@
 
 Central point for my work with the RSL at USC Columbia.
 
+Most of what's here is in private repositories, where the real work happens. But the scripts surrounding them are MIT licensed.
+
 ## Remember to Update All Submodules
 
 ```
