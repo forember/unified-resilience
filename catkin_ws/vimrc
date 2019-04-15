@@ -27,6 +27,8 @@ set hlsearch
 set modeline
 
 " Colorscheme
-set termguicolors
+if $STY == ''
+    set termguicolors
+endif
 set background=dark
 colorscheme snow

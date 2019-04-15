@@ -1,0 +1,15 @@
+<package>
+  <name>landmark_detection</name>
+  <version>0.0.0</version>
+  <description>Detects columns, walls, and corners in a garage</description>
+  <maintainer email="maestro@tachibanatech.com">Sam Dauchert and Chris McKinney</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+</package>
