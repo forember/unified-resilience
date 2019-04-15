@@ -1,5 +1,0 @@
-slam/landmark_detection
-/home/vagrant/catkin_ws/devel/.private/landmark_detection/share/landmark_detection/cmake/landmark_detectionConfig-version.cmake /home/vagrant/catkin_ws/devel/share/landmark_detection/cmake/landmark_detectionConfig-version.cmake
-/home/vagrant/catkin_ws/devel/.private/landmark_detection/share/landmark_detection/cmake/landmark_detectionConfig.cmake /home/vagrant/catkin_ws/devel/share/landmark_detection/cmake/landmark_detectionConfig.cmake
-/home/vagrant/catkin_ws/devel/.private/landmark_detection/lib/landmark_detection/landmark_detection_node /home/vagrant/catkin_ws/devel/lib/landmark_detection/landmark_detection_node
-/home/vagrant/catkin_ws/devel/.private/landmark_detection/lib/pkgconfig/landmark_detection.pc /home/vagrant/catkin_ws/devel/lib/pkgconfig/landmark_detection.pc
