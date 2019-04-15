@@ -31,3 +31,6 @@
 [submodule "catkin_ws/src/slam"]
 	path = catkin_ws/src/slam
 	url = git@github.com:NighttimeDriver50000/rsl-slam.git
+[submodule "catkin_ws/src/waffle-tx2"]
+	path = catkin_ws/src/waffle-tx2
+	url = git@github.com:NighttimeDriver50000/waffle-tx2.git
