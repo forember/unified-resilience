@@ -1,8 +1,9 @@
 #!/bin/bash
-cd "$(dirname "$0")"
+set -x
+cd "$(dirname "$0")/.."
 wd="$(pwd)"
-#source source.bash
-cd ../../xiaofeng-slam
+#source scripts/source.bash
+cd ../xiaofeng-slam
 [ "$1" = '-c' ] && catkin clean --yes
 cmake_args="--cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug"
 command -v gcc-8 && command -v g++-8 \
