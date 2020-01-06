@@ -68,12 +68,6 @@ mv .vimrc.source .vimrc
 cd .vim/bundle
 sh -c 'echo ":quit" | vim -E'
 cd ../..
-# Mosh to TX2
-sudo -H -u vagrant cat >mosh-tx2.sh << 'FILE'
-#!/bin/sh
-mosh --ssh='ssh -p 2276' "lab@$(curl https://ttech.click/tx2-ip.txt)"
-FILE
-chmod +x mosh-tx2.sh
 # Disable Chromium kdewallet popups
 sudo -H -u vagrant cat >.chromium-browser.init << 'FILE'
 CHROMIUM_FLAGS='--password-store=basic'

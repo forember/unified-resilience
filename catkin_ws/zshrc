@@ -50,6 +50,8 @@ fi
 export TURTLEBOT3_MODEL=waffle_pi
 # Gazebo VPN fix
 export IGN_IP=127.0.0.1
+# Default to Qt5
+export QT_SELECT=5
 
 # Color ls
 alias ls='ls --color=auto'

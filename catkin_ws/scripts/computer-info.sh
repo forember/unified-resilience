@@ -31,4 +31,8 @@ gccv="$(gcc --version | head -n1 | awk '{print $4}')"
 [ $? != 0 ] && gccv='<not installed>'
 printf '    "GCC":      %s\n' "$(quote_json "$gccv")"
 
+qtv="$(qmake --version | sed -nE '/Qt version/{s/^.*Qt version ([.0-9]+).*$/\1/;p}')"
+[ $? != 0 ] && qtv='<not installed>'
+printf '    "Qt":       %s\n' "$(quote_json "$qtv")"
+
 printf '  }\n}\n'
