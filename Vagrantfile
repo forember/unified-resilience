@@ -7,7 +7,6 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", path: "ros_provision.sh"
     config.vm.synced_folder "anyconnect-current/", "/root/anyconnect-current"
     config.vm.synced_folder "catkin_ws/", "/home/vagrant/catkin_ws"
-    config.vm.synced_folder "xiaofeng-slam/", "/home/vagrant/xiaofeng-slam"
     config.vm.provider "virtualbox" do |v|
         v.cpus = 4
         v.gui = true

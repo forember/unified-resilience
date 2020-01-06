@@ -1,22 +1,22 @@
 # Unified Resilience
 
-Central point for my work with the RSL at USC Columbia.
+This used to be the central point for my work with the RSL at USC Columbia,
+when I was working remotely. The actual day-to-day work has moved to private
+repositories under the lab account, and so now this repository is for working
+with all the open-source components developed in my work with the lab.
 
-Most of what's here is in private repositories, where the real work happens. But the scripts surrounding them are MIT licensed.
+The scripts themselves are released under the MIT license. The individual
+submodule projects are under various licenses.
 
-## Remember to Update All Submodules
+You can view the old version on the `old-private` branch, but there isn't much
+to see, as much of the public-facing features are also present in the new
+version.
 
+## Quick Start
+
+```bash
+$ git clone git@github.com:NighttimeDriver50000/unified-resilience.git
+$ cd unified-resilience
+$ git submodule update --init --recursive
+$ vagrant up usc-ros
 ```
-git clone git@github.com:NighttimeDriver50000/unified-resilience.git
-cd unified-resilience
-git submodule update --init --recursive
-```
-
-## Melodic Turtlebot 3 Compat
-
--   [depthimage_to_laserscan](https://github.com/ros-perception/depthimage_to_laserscan/issues/31)
-    (has [PR](https://github.com/ros-perception/depthimage_to_laserscan/pull/27))
-
--   [gmapping](https://github.com/ros-perception/slam_gmapping/issues/63)
-
--   [teleop_twist_joy](https://github.com/ros-teleop/teleop_twist_joy/issues/28)

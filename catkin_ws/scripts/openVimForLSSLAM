@@ -1,9 +1,0 @@
-#!/bin/bash
-MAKE_C=~/unified-resilience/catkin_ws/src/ls_slam/CMakeLists.txt
-SLAM_C=~/unified-resilience/catkin_ws/src/ls_slam/src/ls_slam.cpp
-PART_H=~/unified-resilience/catkin_ws/src/ls_slam/include/ls_slam/particle_filter.hpp
-PART_C=~/unified-resilience/catkin_ws/src/ls_slam/src/particle_filter.cpp
-COMM_H=~/unified-resilience/catkin_ws/src/ls_slam/include/ls_slam/common.hpp
-COMM_C=~/unified-resilience/catkin_ws/src/ls_slam/src/common.cpp
-
-vim $MAKE_C -c "tabedit $SLAM_C | tabedit $PART_C | split $PART_H | resize 15 | tabedit $COMM_C | split $COMM_H | resize 15"
