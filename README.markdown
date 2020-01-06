@@ -21,3 +21,18 @@ $ cd unified-resilience
 $ ./gitscripts/pull-submodules.sh
 $ vagrant up usc-ros
 ```
+
+The VM will provision, and when it is done provisioning, it will shut down. Run
+`vagrant up usc-ros` to bring up the provisioned VM. Open `sakura`, and run the
+following commands. `make.sh` will change the system time on first run. The
+default password is `vagrant`.
+
+```zsh
+$ cd catkin_ws
+$ ./scripts/make.sh
+$ source ./scripts/source.zsh
+$ roslaunch waffle_tx2_tf2 bringup.launch sim:=1 cartographer:=0 teleop:=1
+```
+
+Once the nodes are launched, press `w` a few times in the terminal. The robot
+should start moving forward in Gazebo.

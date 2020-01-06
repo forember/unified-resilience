@@ -4,6 +4,7 @@ import datetime
 import subprocess
 
 def main():
+    subprocess.run(["timedatectl", "set-ntp", "false"])
     now = datetime.datetime.now()
     inc = datetime.timedelta(minutes=1)
     arg = (now + inc).isoformat(sep=" ", timespec="seconds")
