@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 set -x
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 git pull
 git submodule sync --recursive
 git submodule update --recursive --init

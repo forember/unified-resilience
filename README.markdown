@@ -17,6 +17,6 @@ version.
 ```bash
 $ git clone git@github.com:NighttimeDriver50000/unified-resilience.git
 $ cd unified-resilience
-$ ./pull-submodules.sh
+$ ./gitscripts/pull-submodules.sh
 $ vagrant up usc-ros
 ```
