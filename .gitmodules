@@ -6,16 +6,28 @@
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 [submodule "catkin_ws/src/turtlebot3_simulations"]
 	path = catkin_ws/src/turtlebot3_simulations
-	url = git@github.com:NighttimeDriver50000/turtlebot3_simulations.git
+	url = https://github.com/NighttimeDriver50000/turtlebot3_simulations.git
 [submodule "catkin_ws/src/mckinnc_ekf"]
 	path = catkin_ws/src/mckinnc_ekf
-	url = git@github.com:NighttimeDriver50000/mckinnc_ekf.git
+	url = https://github.com/NighttimeDriver50000/mckinnc_ekf.git
 [submodule "catkin_ws/src/resilient_debug_gui"]
 	path = catkin_ws/src/resilient_debug_gui
-	url = git@github.com:NighttimeDriver50000/resilient_debug_gui.git
+	url = https://github.com/NighttimeDriver50000/resilient_debug_gui.git
 [submodule "catkin_ws/src/zed-ros-wrapper"]
 	path = catkin_ws/src/zed-ros-wrapper
 	url = https://github.com/stereolabs/zed-ros-wrapper.git
 [submodule "catkin_ws/src/waffle-tx2"]
 	path = catkin_ws/src/waffle-tx2
-	url = git@github.com:NighttimeDriver50000/waffle-tx2.git
+	url = https://github.com/NighttimeDriver50000/waffle-tx2.git
+[submodule "catkin_ws/src/elevation_mapping"]
+	path = catkin_ws/src/elevation_mapping
+	url = https://github.com/ANYbotics/elevation_mapping.git
+[submodule "catkin_ws/src/grid_map"]
+	path = catkin_ws/src/grid_map
+	url = https://github.com/ANYbotics/grid_map.git
+[submodule "catkin_ws/src/kindr"]
+	path = catkin_ws/src/kindr
+	url = https://github.com/ANYbotics/kindr.git
+[submodule "catkin_ws/src/kindr_ros"]
+	path = catkin_ws/src/kindr_ros
+	url = https://github.com/ANYbotics/kindr_ros.git
