@@ -21,7 +21,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_confirm_extra_conf = 0
 
 " Make catkin workspace
-nmap <leader>m :!/home/vagrant/catkin_ws/make.sh<cr>
+nmap <leader>m :!/home/vagrant/catkin_ws/scripts/make.sh<cr>
 
 " Highlight searches
 set hlsearch

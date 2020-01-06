@@ -37,13 +37,14 @@ BULLETTRAIN_PROMPT_ORDER=(
 # Finalize Antigen
 antigen apply
 
-# ROS
-source /opt/ros/melodic/setup.zsh
-
-# Catkin workspace
+# ROS and catkin workspace
+local ros_setup='/opt/ros/melodic/setup.zsh'
 local catkin_setup="$HOME/catkin_ws/devel/setup.zsh"
-if [ -f "$catkin_setup" ]; then
-    source "$catkin_setup"
+if [ -f "$ros_setup" ]; then
+    source "$ros_setup"
+    if [ -f "$catkin_setup" ]; then
+        source "$catkin_setup"
+    fi
 fi
 
 # Turtlebot 3 model

@@ -55,3 +55,7 @@ FILE
 chown vagrant:vagrant .
 chown vagrant:vagrant *
 chown -R vagrant:vagrant .[crv]*
+# Login with zsh
+chsh -s /bin/zsh vagrant
+# Index the filesystem
+updatedb
