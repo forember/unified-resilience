@@ -17,7 +17,6 @@ Vagrant.configure("2") do |config|
         v.customize ["modifyvm", :id, "--ostype", "Ubuntu_64", "--vram", "256",
                      "--acpi", "on", "--ioapic", "on", "--hwvirtex", "on",
                      "--clipboard", "bidirectional"]
-        v.default_nic_type = "82543GC"
     end
     config.vm.provision "shell", inline: "poweroff"
 end
